@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 1rem 1.3rem;
+  width: 350px;
+  min-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.116);
+  flex-shrink: 0;
+
+  .lawFlag {
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 224, 177);
+    color: rgb(189, 140, 67);
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .city,
+  .description {
+    color: rgb(143, 143, 143);
+  }
+
+  .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    line-height: 1.3rem;
+    min-height: 125px;
+    overflow: auto;
+  }
+
+  .situationContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 90%;
+
+    .situation {
+      font-size: 1.1rem;
+      color: rgb(78, 78, 78);
+    }
+    .value {
+      font-weight: 600;
+      color: rgb(61, 61, 61);
+      white-space: nowrap;
+    }
+  }
+
+  .btnContainer {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+
+    .btnAdd {
+      cursor: pointer;
+      color: rgb(168, 168, 168);
+      border: none;
+      background-color: rgb(247, 247, 247);
+      border-radius: 5px;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      font-family: sans-serif;
+      flex-grow: 1;
+
+      &:hover {
+        background-color: rgb(240, 240, 240);
+      }
+    }
+
+    .heartIcon {
+      color: rgb(206, 206, 206);
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  }
+}
