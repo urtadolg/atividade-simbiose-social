@@ -12,7 +12,7 @@ const useSalic = () => {
       setIsLoading(true);
       setErrorMessage(null);
       const response = await axios(
-        "https://api.salic.cultura.gov.br/v1/projetos/?limit=60&offset=1&format=json"
+        "http://api.salic.cultura.gov.br/v1/projetos/?limit=60&offset=1&format=json"
       );
       console.log(response);
       setIsLoading(false);
